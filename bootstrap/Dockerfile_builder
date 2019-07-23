@@ -36,3 +36,5 @@ RUN unzip -q -d /tmp hack/v2.zip
 RUN go mod download
 # Copy in the source
 COPY . .
+
+RUN make build-kfctl
